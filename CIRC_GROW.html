@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload= "draw()">
+    <canvas id="sketch" width="600" height="600">
+    </canvas>
+  <script>
+  function draw() {
+  var sketch = document.getElementById('sketch');
+  var context = sketch.getContext("2d");
+
+  //var input = prompt("How circles do you want?");
+  //var output = parseInt(input);
+  /*var x = 10;
+  var y = 10;*/
+
+  for(i = 1; i <= 10; i++) {
+     //for(j = 1; j <= 7; j++) {
+        //console.log("Row TEST");
+      context.fillStyle = "#c20202";
+      context.beginPath();
+      context.arc((i * 20),(i * 50), (i * 5), 10, 0, 2 * Math.PI, false);
+      context.closePath();
+      context.fill();
+       //y = y + 35
+       }
+
+
+
+}
+ //}
+
+
+
+
+
+  </script>
+  </body>
+</html>

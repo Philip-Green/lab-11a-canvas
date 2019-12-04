@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload= "draw()">
+    <canvas id="sketch" width="600" height="600">
+    </canvas>
+  <script>
+  function draw() {
+  var sketch = document.getElementById('sketch');
+  var context = sketch.getContext("2d");
+
+  //var input = prompt("How circles do you want?");
+  //var output = parseInt(input);
+  /*var x = 10;
+  var y = 10;*/
+
+  for(i = 1; i <= 4; i++) {
+    //console.log("COLUMN TEST");
+      /*context.fillStyle = "#db63a7";
+      context.beginPath();
+      context.arc(x,y, 20, 10, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+      x = x + 35*/
+      for(j = 1; j <= 7; j++) {
+        //console.log("Row TEST");
+      context.fillStyle = "#32a852";
+      context.beginPath();
+      context.arc((i * 50),(j * 50), 20, 10, 0, 2 * Math.PI, true);
+      context.closePath();
+      context.fill();
+       //y = y + 35
+       }
+
+
+
+}
+
+  /*context.fillStyle = "#db63a7";
+  context.beginPath();
+  context.arc(100,100, 50, 10, 0, 2 * Math.PI, true);
+  context.closePath();
+  context.fill();*/
+
+
+}
+
+
+
+
+
+  </script>
+  </body>
+</html>

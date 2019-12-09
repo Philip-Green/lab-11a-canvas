@@ -12,10 +12,10 @@
   var sketch = document.getElementById('sketch');
   var context = sketch.getContext("2d");
 
-  //var input = prompt("How circles do you want?");
-  //var output = parseInt(input);
+  var input = prompt("How rows do you want?");
+  var output = parseInt(input);
 
-  //for(i = 0; i<output; i++){
+  for(i = 0; i <= output; i++){
 
 
   context.fillStyle = "#db63a7";
@@ -24,7 +24,7 @@
   context.closePath();
   context.fill();
 
-
+  }
 }
 
 
